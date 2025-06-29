@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { FcGoogle } from 'react-icons/fc';
 import { handleGoogleLogin, handleSubmit } from './config';
+import { Alert } from '@mui/material';
 
 const App = () => {
 
@@ -24,7 +25,8 @@ const App = () => {
         <h2 className='text-3xl font-bold text-center mb-4'>Welcome Back</h2>
         <p className='text-gray-400 text-center mb-6'>Login to your Account</p>
 
-        {error && <p className='text-red-500 text-center mb-4'>{error}</p>}
+        {/* {error && <p className='text-red-500 text-center mb-4'>{error}</p>} */}
+        {error && <Alert severity='error' variant='standard' sx={{marginBottom:4, textAlign:'center', px:9}}>{error}</Alert>}
 
         <form onSubmit={(e) => handleSubmit(e, setError)} className='space-y-6'>
           <div>
