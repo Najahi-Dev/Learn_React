@@ -17,8 +17,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-500 
-    via-gray-700 to-gray-900 px-4'>
+    <div className='min-h-screen flex items-center justify-center n'>
       <div className={`relative bg-gray-800 text-white shadow-lg rounded-lg p-10 max-w-md w-full
       border border-gray-700 hover:shadow-[0_0_25px_5px_#388bf83b] transition duration-300
       ${formVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'} transform transition-all duration-500 ease-out`}>
